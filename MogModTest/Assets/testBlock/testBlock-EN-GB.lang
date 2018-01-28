@@ -1,0 +1,5 @@
+language.code=en-GB
+language=English
+
+mods.testBlock.testBlock.name=Testing Block
+mods.testBlock.testBlock.description=This is just a test. Fair warning!
