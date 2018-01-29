@@ -18,7 +18,7 @@ namespace MogModTest
 
         public Entity Instance(Vector3I location, Tile tile, Universe universe)
         {
-            return TestBlockTileStateEntityBuilder.Spawn((EntityUniverseFacade) universe, tile, location);
+            return TestBlockTileStateEntityBuilder.Spawn(universe, tile, location);
         }
     }
 }

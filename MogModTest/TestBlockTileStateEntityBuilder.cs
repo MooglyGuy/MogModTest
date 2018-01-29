@@ -7,14 +7,14 @@ namespace MogModTest {
         public string Kind { get { return KindCode; } }
         public static string KindCode { get { return "mods.testBlock.tileState.testBlock"; } }
 
-        public EntityPainter Instance()
+        EntityPainter IEntityPainterBuilder.Instance()
         {
-            return new TestBlockTileStateEntityPainter();
+            return (EntityPainter)new TestBlockTileStateEntityPainter();
         }
 
-        public EntityLogic Instance(Entity entity, bool server)
+        EntityLogic IEntityLogicBuilder.Instance(Entity entity, bool server)
         {
-            return new TestBlockTileStateEntityLogic(entity);
+            return (EntityLogic)new TestBlockTileStateEntityLogic(entity);
         }
 
         void IEntityLogicBuilder.Load()
@@ -27,11 +27,10 @@ namespace MogModTest {
 
         public static Entity Spawn(EntityUniverseFacade facade, Tile tile, Vector3I location)
         {
-            var spawnRecord = facade.AllocateNewEntityId();
-            var entity = new Entity(spawnRecord, false, KindCode, true);
+            var entity = new Entity(facade.AllocateNewEntityId(), false, KindCode, true);
             var blob = BlobAllocator.Blob(true);
-            blob.SetString("tile", tile.Configuration.Code);
-            blob.FetchBlob("location").SetVector3I(location);
+            blob.SetString(nameof(tile), tile.Configuration.Code);
+            blob.FetchBlob(nameof(location)).SetVector3I(location);
             blob.SetLong("variant", tile.Variant());
             blob.FetchBlob("position").SetVector3D(location.ToTileCenterVector3D());
             blob.FetchBlob("velocity").SetVector3D(Vector3D.Zero);
