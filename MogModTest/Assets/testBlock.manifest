@@ -1,0 +1,42 @@
+{
+  "author": "TheMogMiner",
+  "createdOn": "2018-01-29T15:48:15.4611180Z",
+  "description": "Just a testing playground.",
+  "fileId": 0,
+  "files": {
+    "testBlock/BuildingStoreTools.treasure": {
+      "hash": "rza59ZoG0fhzbgc5LGLh2eQOL0zcn48b1tJXhX1AoSdO9A"
+    },
+    "testBlock/MogModTest.dll": {
+      "hash": "qOHOmNoppOKVVDjn7wKNZsdTM8XaEEKKUC6QmyRocsk"
+    },
+    "testBlock/MogModTest.mod": {
+      "hash": "41ZrOgZDCGjXHpKH39bGxSCj2gJ6qzcoBlR1AfuEx3C8"
+    },
+    "testBlock/MogModTest.pdb": {
+      "hash": "jHvYleadmgei8YdgzczaUy942NBLVR63GZPPlKQXlBGkk"
+    },
+    "testBlock/preview.jpg": {
+      "hash": "WEyUYTas76A875E47PdOC00eYqophEdVKFwro5ZHh60"
+    },
+    "testBlock/testBlock-EN-GB.lang": {
+      "hash": "hbbqInqcivkl9gg37sbR2WoPeHyPJzcFN0KktXAAAjzbE"
+    },
+    "testBlock/testBlock.qb": {
+      "hash": "JdouIygFUc3iKPgNq8xsSQ9lMulPyPcwjh2SzbkCBJTM"
+    },
+    "testBlock/testBlock.qbcl": {
+      "hash": "6sn7rIoRHUXIvp4UxGAhtDPAzaPLprseYzc9atmczcFdzaI"
+    },
+    "testBlock/testBlock.tile": {
+      "hash": "nuUoYoOi5nfNbMzcPb6oPw3ySITbT90ttqzbRTVJODxs4"
+    }
+  },
+  "lastInstalled": "0001-01-01T00:00:00.0000000",
+  "lastUpdated": "2018-01-29T15:58:13.6816900Z",
+  "name": "testBlock",
+  "tags": [
+    "Blocks"
+  ],
+  "userID": 0
+}
